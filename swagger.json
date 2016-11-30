@@ -269,7 +269,6 @@
     "description" : "Getting started with Selectel DNS API",
     "url" : "https://blog.selectel.ru/upravlenie-domenami-s-selectel-dns-api/"
   },
-  "x-azure-api-id" : "sh-1469571953760",
   "schemes" : [ "https" ],
   "host" : "virtserver.swaggerhub.com",
   "basePath" : "/mdsina/selectel-dns/1.0.0"
