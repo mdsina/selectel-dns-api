@@ -275,7 +275,7 @@
         }
       },
       "get" : {
-        "tags" : [ "domains" ],
+        "tags" : [ "ptr" ],
         "summary" : "Getting PTR records",
         "description" : "",
         "operationId" : "getPtrRecords",
@@ -332,7 +332,7 @@
       },
       "put" : {
         "tags" : [ "ptr" ],
-        "summary" : "Updates a domain",
+        "summary" : "Updates a PTR record",
         "description" : "",
         "operationId" : "updatePtrRecord",
         "consumes" : [ "application/json" ],
@@ -382,7 +382,7 @@
       },
       "delete" : {
         "tags" : [ "ptr" ],
-        "summary" : "Deletes a domain",
+        "summary" : "Deletes a PTR record",
         "description" : "",
         "operationId" : "deletePtrRecord",
         "produces" : [ "application/json" ],
