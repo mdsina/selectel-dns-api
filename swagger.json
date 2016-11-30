@@ -270,6 +270,6 @@
     "url" : "https://blog.selectel.ru/upravlenie-domenami-s-selectel-dns-api/"
   },
   "schemes" : [ "https" ],
-  "host" : "virtserver.swaggerhub.com",
-  "basePath" : "/mdsina/selectel-dns/1.0.0"
+  "host" : "api.selectel.ru",
+  "basePath" : "/domains/v1"
 }
