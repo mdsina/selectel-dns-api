@@ -10,7 +10,7 @@
   },
   "tags" : [ {
     "name" : "domains",
-    "description" : "Domains' operations"
+    "description" : "Operations with domains"
   }, {
     "name" : "ptr",
     "description" : "Operations with PTR records"
@@ -235,6 +235,174 @@
           }
         }
       }
+    },
+    "/ptr" : {
+      "post" : {
+        "tags" : [ "domains" ],
+        "summary" : "Create new PTR record",
+        "description" : "",
+        "operationId" : "addPtrRecord",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "PTR record info for creation",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/NewOrUpdatedPTRRecord"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/PTRRecord"
+            }
+          },
+          "400" : {
+            "description" : "",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          },
+          "409" : {
+            "description" : "",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "domains" ],
+        "summary" : "Getting PTR records",
+        "description" : "",
+        "operationId" : "getPtrRecords",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/PTRRecord"
+              }
+            }
+          },
+          "400" : {
+            "description" : "Not valid IP address",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          }
+        }
+      }
+    },
+    "/ptr/{ptr_id}" : {
+      "get" : {
+        "tags" : [ "ptr" ],
+        "summary" : "Find information about PTR record by ID",
+        "description" : "Returns a single PTR record",
+        "operationId" : "getPtrRecordById",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "ptr_id",
+          "in" : "path",
+          "description" : "ID of PTR record",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/PTRRecord"
+            }
+          },
+          "404" : {
+            "description" : "PTR record not found",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "ptr" ],
+        "summary" : "Updates a domain",
+        "description" : "",
+        "operationId" : "updatePtrRecord",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "ptr_id",
+          "in" : "path",
+          "description" : "ID of PTR record",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "body",
+          "in" : "body",
+          "description" : "PTR record info for update",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/NewOrUpdatedPTRRecord"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/PTRRecord"
+            }
+          },
+          "404" : {
+            "description" : "PTR record not found",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          },
+          "400" : {
+            "description" : "",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          },
+          "409" : {
+            "description" : "",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "ptr" ],
+        "summary" : "Deletes a domain",
+        "description" : "",
+        "operationId" : "deletePtrRecord",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "ptr_id",
+          "in" : "path",
+          "description" : "ID of PTR record",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "404" : {
+            "description" : "PTR record not found",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          }
+        }
+      }
     }
   },
   "securityDefinitions" : {
@@ -248,6 +416,43 @@
     "X-Token" : [ ]
   } ],
   "definitions" : {
+    "PTRRecord" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "description" : "PTR record identifier",
+          "format" : "int64"
+        },
+        "ip" : {
+          "type" : "string"
+        },
+        "content" : {
+          "type" : "string",
+          "description" : "Domain name"
+        },
+        "user_id" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "NewOrUpdatedPTRRecord" : {
+      "type" : "object",
+      "required" : [ "ip", "content" ],
+      "properties" : {
+        "ip" : {
+          "type" : "string",
+          "description" : "IPv4 or IPv6 address",
+          "example" : "127.0.0.1"
+        },
+        "content" : {
+          "type" : "string",
+          "description" : "Domain name",
+          "example" : "test.tld"
+        }
+      }
+    },
     "Domain" : {
       "type" : "object",
       "properties" : {
@@ -311,7 +516,6 @@
     },
     "ApiResponse" : {
       "type" : "object",
-      "required" : [ "error" ],
       "properties" : {
         "code" : {
           "type" : "integer",
