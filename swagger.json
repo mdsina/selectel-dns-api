@@ -10,13 +10,13 @@
   },
   "tags" : [ {
     "name" : "domains",
-    "description" : "Domains/DNS Management"
+    "description" : "Domains' operations"
   }, {
-    "name" : "store",
-    "description" : "Access to Petstore orders"
+    "name" : "ptr",
+    "description" : "Operations with PTR records"
   }, {
-    "name" : "user",
-    "description" : "Operations about user"
+    "name" : "records",
+    "description" : "Operations with resource records"
   } ],
   "paths" : {
     "/" : {
@@ -194,6 +194,37 @@
             "description" : "successful operation",
             "schema" : {
               "$ref" : "#/definitions/Domain"
+            }
+          },
+          "404" : {
+            "description" : "Domain not found",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          }
+        }
+      }
+    },
+    "/{domain_id}/export" : {
+      "get" : {
+        "tags" : [ "domains" ],
+        "summary" : "Find domain by name",
+        "description" : "Returns a domain's zone file",
+        "operationId" : "getDomainZoneFile",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "domain_id",
+          "in" : "path",
+          "description" : "ID of domain to delete",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "string"
             }
           },
           "404" : {
