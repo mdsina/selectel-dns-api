@@ -238,7 +238,7 @@
     },
     "/ptr" : {
       "post" : {
-        "tags" : [ "domains" ],
+        "tags" : [ "ptr" ],
         "summary" : "Create new PTR record",
         "description" : "",
         "operationId" : "addPtrRecord",
