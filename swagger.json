@@ -622,6 +622,14 @@
           "description" : "name of domain",
           "required" : true,
           "type" : "string"
+        }, {
+          "name" : "body",
+          "in" : "body",
+          "description" : "Records info for update",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/BatchUpdateModel"
+          }
         } ],
         "responses" : {
           "404" : {
@@ -813,6 +821,29 @@
     "X-Token" : [ ]
   } ],
   "definitions" : {
+    "BatchUpdateModel" : {
+      "type" : "object",
+      "properties" : {
+        "delete" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Record"
+          }
+        },
+        "update" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Record"
+          }
+        },
+        "create" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Record"
+          }
+        }
+      }
+    },
     "GeoRecord" : {
       "type" : "object"
     },
