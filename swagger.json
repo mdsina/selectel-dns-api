@@ -844,9 +844,6 @@
         }
       }
     },
-    "GeoRecord" : {
-      "type" : "object"
-    },
     "NewOrUpdatedRecord" : {
       "type" : "object",
       "required" : [ "name", "type" ],
@@ -933,13 +930,6 @@
         "target" : {
           "type" : "string",
           "description" : "Service hostname (only for SRV)"
-        },
-        "geo_records" : {
-          "description" : "Geo-records",
-          "type" : "array",
-          "items" : {
-            "$ref" : "#/definitions/GeoRecord"
-          }
         },
         "priority" : {
           "type" : "integer",
