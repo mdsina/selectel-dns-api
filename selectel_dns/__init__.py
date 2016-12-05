@@ -28,7 +28,6 @@ from __future__ import absolute_import
 from .models.api_response import ApiResponse
 from .models.batch_update_model import BatchUpdateModel
 from .models.domain import Domain
-from .models.geo_record import GeoRecord
 from .models.new_domain import NewDomain
 from .models.new_or_updated_ptr_record import NewOrUpdatedPTRRecord
 from .models.new_or_updated_record import NewOrUpdatedRecord

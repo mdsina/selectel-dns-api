@@ -12,7 +12,6 @@ Name | Type | Description | Notes
 **weight** | **int** | Relative weight for records with the same priority (only for SRV) | [optional] 
 **port** | **int** | Service port (only for SRV) | [optional] 
 **target** | **str** | Service hostname (only for SRV) | [optional] 
-**geo_records** | [**list[GeoRecord]**](GeoRecord.md) | Geo-records | [optional] 
 **priority** | **int** | Record priority (only for SRV and MX records) | [optional] 
 **create_date** | **int** | Create Date in UNIX Timestamp | [optional] 
 **change_date** | **int** | Change Date in UNIX Timestamp | [optional] 

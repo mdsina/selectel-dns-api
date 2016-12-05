@@ -99,7 +99,6 @@ Class | Method | HTTP request | Description
  - [ApiResponse](docs/ApiResponse.md)
  - [BatchUpdateModel](docs/BatchUpdateModel.md)
  - [Domain](docs/Domain.md)
- - [GeoRecord](docs/GeoRecord.md)
  - [NewDomain](docs/NewDomain.md)
  - [NewOrUpdatedPTRRecord](docs/NewOrUpdatedPTRRecord.md)
  - [NewOrUpdatedRecord](docs/NewOrUpdatedRecord.md)
