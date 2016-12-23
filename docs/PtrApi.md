@@ -1,4 +1,4 @@
-# selectel_dns.PtrApi
+# selectel_dns_api.PtrApi
 
 All URIs are relative to *https://api.selectel.ru/domains/v1*
 
@@ -22,13 +22,13 @@ Create new PTR record
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.PtrApi()
-body = selectel_dns.NewOrUpdatedPTRRecord() # NewOrUpdatedPTRRecord | PTR record info for creation
+api_instance = selectel_dns_api.PtrApi()
+body = selectel_dns_api.NewOrUpdatedPTRRecord() # NewOrUpdatedPTRRecord | PTR record info for creation
 
 try: 
     # Create new PTR record
@@ -70,12 +70,12 @@ Deletes a PTR record
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.PtrApi()
+api_instance = selectel_dns_api.PtrApi()
 ptr_id = 789 # int | ID of PTR record
 
 try: 
@@ -117,12 +117,12 @@ Returns a single PTR record
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.PtrApi()
+api_instance = selectel_dns_api.PtrApi()
 ptr_id = 789 # int | ID of PTR record
 
 try: 
@@ -165,12 +165,12 @@ Getting PTR records
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.PtrApi()
+api_instance = selectel_dns_api.PtrApi()
 
 try: 
     # Getting PTR records
@@ -209,14 +209,14 @@ Updates a PTR record
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.PtrApi()
+api_instance = selectel_dns_api.PtrApi()
 ptr_id = 789 # int | ID of PTR record
-body = selectel_dns.NewOrUpdatedPTRRecord() # NewOrUpdatedPTRRecord | PTR record info for update
+body = selectel_dns_api.NewOrUpdatedPTRRecord() # NewOrUpdatedPTRRecord | PTR record info for update
 
 try: 
     # Updates a PTR record

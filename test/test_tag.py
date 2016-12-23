@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import selectel_dns
-from selectel_dns.rest import ApiException
-from selectel_dns.models.tag import Tag
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
+from selectel_dns_api.models.tag import Tag
 
 
 class TestTag(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestTag(unittest.TestCase):
         """
         Test Tag
         """
-        model = selectel_dns.models.tag.Tag()
+        model = selectel_dns_api.models.tag.Tag()
 
 
 if __name__ == '__main__':

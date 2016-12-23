@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import selectel_dns
-from selectel_dns.rest import ApiException
-from selectel_dns.models.ptr_record import PTRRecord
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
+from selectel_dns_api.models.ptr_record import PTRRecord
 
 
 class TestPTRRecord(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestPTRRecord(unittest.TestCase):
         """
         Test PTRRecord
         """
-        model = selectel_dns.models.ptr_record.PTRRecord()
+        model = selectel_dns_api.models.ptr_record.PTRRecord()
 
 
 if __name__ == '__main__':

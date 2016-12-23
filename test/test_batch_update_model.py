@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import selectel_dns
-from selectel_dns.rest import ApiException
-from selectel_dns.models.batch_update_model import BatchUpdateModel
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
+from selectel_dns_api.models.batch_update_model import BatchUpdateModel
 
 
 class TestBatchUpdateModel(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestBatchUpdateModel(unittest.TestCase):
         """
         Test BatchUpdateModel
         """
-        model = selectel_dns.models.batch_update_model.BatchUpdateModel()
+        model = selectel_dns_api.models.batch_update_model.BatchUpdateModel()
 
 
 if __name__ == '__main__':

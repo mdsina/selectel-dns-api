@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import selectel_dns
-from selectel_dns.rest import ApiException
-from selectel_dns.models.new_or_updated_ptr_record import NewOrUpdatedPTRRecord
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
+from selectel_dns_api.models.new_or_updated_ptr_record import NewOrUpdatedPTRRecord
 
 
 class TestNewOrUpdatedPTRRecord(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestNewOrUpdatedPTRRecord(unittest.TestCase):
         """
         Test NewOrUpdatedPTRRecord
         """
-        model = selectel_dns.models.new_or_updated_ptr_record.NewOrUpdatedPTRRecord()
+        model = selectel_dns_api.models.new_or_updated_ptr_record.NewOrUpdatedPTRRecord()
 
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-# selectel_dns.DomainsApi
+# selectel_dns_api.DomainsApi
 
 All URIs are relative to *https://api.selectel.ru/domains/v1*
 
@@ -24,13 +24,13 @@ Create new domain
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.DomainsApi()
-body = selectel_dns.NewDomain() # NewDomain | Domain info for creation
+api_instance = selectel_dns_api.DomainsApi()
+body = selectel_dns_api.NewDomain() # NewDomain | Domain info for creation
 
 try: 
     # Create new domain
@@ -72,12 +72,12 @@ Deletes a domain
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.DomainsApi()
+api_instance = selectel_dns_api.DomainsApi()
 domain_id = 789 # int | ID of domain to delete
 
 try: 
@@ -119,12 +119,12 @@ Returns a single domain
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.DomainsApi()
+api_instance = selectel_dns_api.DomainsApi()
 domain_id = 789 # int | ID of domain to return
 
 try: 
@@ -167,12 +167,12 @@ Returns a single domain
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.DomainsApi()
+api_instance = selectel_dns_api.DomainsApi()
 domain_name = 'domain_name_example' # str | name of domain to return
 
 try: 
@@ -215,12 +215,12 @@ Returns a domain's zone file
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.DomainsApi()
+api_instance = selectel_dns_api.DomainsApi()
 domain_id = 789 # int | ID of domain to delete
 
 try: 
@@ -263,12 +263,12 @@ Getting domains info
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.DomainsApi()
+api_instance = selectel_dns_api.DomainsApi()
 
 try: 
     # Getting domains info
@@ -307,14 +307,14 @@ Updates a domain
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.DomainsApi()
+api_instance = selectel_dns_api.DomainsApi()
 domain_id = 789 # int | ID of domain to update
-body = selectel_dns.UpdatedDomain() # UpdatedDomain | Domain info for update
+body = selectel_dns_api.UpdatedDomain() # UpdatedDomain | Domain info for update
 
 try: 
     # Updates a domain

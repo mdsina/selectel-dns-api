@@ -28,16 +28,16 @@ import os
 import sys
 import unittest
 
-import selectel_dns
-from selectel_dns.rest import ApiException
-from selectel_dns.apis.records_api import RecordsApi
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
+from selectel_dns_api.apis.records_api import RecordsApi
 
 
 class TestRecordsApi(unittest.TestCase):
     """ RecordsApi unit test stubs """
 
     def setUp(self):
-        self.api = selectel_dns.apis.records_api.RecordsApi()
+        self.api = selectel_dns_api.apis.records_api.RecordsApi()
 
     def tearDown(self):
         pass

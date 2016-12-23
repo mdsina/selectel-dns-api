@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import selectel_dns
-from selectel_dns.rest import ApiException
-from selectel_dns.models.new_domain import NewDomain
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
+from selectel_dns_api.models.new_domain import NewDomain
 
 
 class TestNewDomain(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestNewDomain(unittest.TestCase):
         """
         Test NewDomain
         """
-        model = selectel_dns.models.new_domain.NewDomain()
+        model = selectel_dns_api.models.new_domain.NewDomain()
 
 
 if __name__ == '__main__':

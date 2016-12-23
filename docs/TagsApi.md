@@ -1,4 +1,4 @@
-# selectel_dns.TagsApi
+# selectel_dns_api.TagsApi
 
 All URIs are relative to *https://api.selectel.ru/domains/v1*
 
@@ -22,13 +22,13 @@ Create new tag
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.TagsApi()
-body = selectel_dns.NewOrUpdatedTag() # NewOrUpdatedTag | Tag info for creation
+api_instance = selectel_dns_api.TagsApi()
+body = selectel_dns_api.NewOrUpdatedTag() # NewOrUpdatedTag | Tag info for creation
 
 try: 
     # Create new tag
@@ -70,12 +70,12 @@ Deletes a tag
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.TagsApi()
+api_instance = selectel_dns_api.TagsApi()
 tag_id = 789 # int | ID of tag
 
 try: 
@@ -117,12 +117,12 @@ Returns a single tag
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.TagsApi()
+api_instance = selectel_dns_api.TagsApi()
 tag_id = 789 # int | ID of tag
 
 try: 
@@ -165,12 +165,12 @@ Getting tags
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.TagsApi()
+api_instance = selectel_dns_api.TagsApi()
 
 try: 
     # Getting tags
@@ -209,14 +209,14 @@ Updates a tag
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.TagsApi()
+api_instance = selectel_dns_api.TagsApi()
 tag_id = 789 # int | ID of tag
-body = selectel_dns.NewOrUpdatedTag() # NewOrUpdatedTag | Tag info for update
+body = selectel_dns_api.NewOrUpdatedTag() # NewOrUpdatedTag | Tag info for update
 
 try: 
     # Updates a tag

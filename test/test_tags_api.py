@@ -28,16 +28,16 @@ import os
 import sys
 import unittest
 
-import selectel_dns
-from selectel_dns.rest import ApiException
-from selectel_dns.apis.tags_api import TagsApi
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
+from selectel_dns_api.apis.tags_api import TagsApi
 
 
 class TestTagsApi(unittest.TestCase):
     """ TagsApi unit test stubs """
 
     def setUp(self):
-        self.api = selectel_dns.apis.tags_api.TagsApi()
+        self.api = selectel_dns_api.apis.tags_api.TagsApi()
 
     def tearDown(self):
         pass

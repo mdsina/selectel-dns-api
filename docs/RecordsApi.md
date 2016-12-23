@@ -1,4 +1,4 @@
-# selectel_dns.RecordsApi
+# selectel_dns_api.RecordsApi
 
 All URIs are relative to *https://api.selectel.ru/domains/v1*
 
@@ -23,13 +23,13 @@ Create resource records for domain
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.RecordsApi()
-body = selectel_dns.NewOrUpdatedRecord() # NewOrUpdatedRecord | Resource record info
+api_instance = selectel_dns_api.RecordsApi()
+body = selectel_dns_api.NewOrUpdatedRecord() # NewOrUpdatedRecord | Resource record info
 domain_id = 789 # int | ID of domain
 
 try: 
@@ -71,14 +71,14 @@ Mass update of domain's resources records
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.RecordsApi()
+api_instance = selectel_dns_api.RecordsApi()
 domain_name = 'domain_name_example' # str | name of domain
-body = selectel_dns.BatchUpdateModel() # BatchUpdateModel | Records info for update
+body = selectel_dns_api.BatchUpdateModel() # BatchUpdateModel | Records info for update
 
 try: 
     # Mass update of domain's resources records
@@ -120,12 +120,12 @@ Deletes a resource record
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.RecordsApi()
+api_instance = selectel_dns_api.RecordsApi()
 domain_id = 789 # int | ID of domain
 record_id = 789 # int | ID of resource record
 
@@ -169,12 +169,12 @@ Getting records info
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.RecordsApi()
+api_instance = selectel_dns_api.RecordsApi()
 domain_id = 789 # int | ID of domain
 
 try: 
@@ -217,12 +217,12 @@ Returns a domain's resource records
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.RecordsApi()
+api_instance = selectel_dns_api.RecordsApi()
 domain_name = 'domain_name_example' # str | name of domain
 
 try: 
@@ -265,15 +265,15 @@ Updates a resource record
 ```python
 from __future__ import print_statement
 import time
-import selectel_dns
-from selectel_dns.rest import ApiException
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = selectel_dns.RecordsApi()
+api_instance = selectel_dns_api.RecordsApi()
 domain_id = 789 # int | ID of domain
 record_id = 789 # int | ID of resource record
-body = selectel_dns.NewOrUpdatedRecord() # NewOrUpdatedRecord | Record info for update
+body = selectel_dns_api.NewOrUpdatedRecord() # NewOrUpdatedRecord | Record info for update
 
 try: 
     # Updates a resource record

@@ -28,16 +28,16 @@ import os
 import sys
 import unittest
 
-import selectel_dns
-from selectel_dns.rest import ApiException
-from selectel_dns.apis.ptr_api import PtrApi
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
+from selectel_dns_api.apis.ptr_api import PtrApi
 
 
 class TestPtrApi(unittest.TestCase):
     """ PtrApi unit test stubs """
 
     def setUp(self):
-        self.api = selectel_dns.apis.ptr_api.PtrApi()
+        self.api = selectel_dns_api.apis.ptr_api.PtrApi()
 
     def tearDown(self):
         pass

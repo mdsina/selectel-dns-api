@@ -25,7 +25,7 @@
 import sys
 from setuptools import setup, find_packages
 
-NAME = "selectel_dns"
+NAME = "selectel_dns_api"
 VERSION = "1.0.0"
 
 # To install the library, run the following

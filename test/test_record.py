@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import selectel_dns
-from selectel_dns.rest import ApiException
-from selectel_dns.models.record import Record
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
+from selectel_dns_api.models.record import Record
 
 
 class TestRecord(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestRecord(unittest.TestCase):
         """
         Test Record
         """
-        model = selectel_dns.models.record.Record()
+        model = selectel_dns_api.models.record.Record()
 
 
 if __name__ == '__main__':

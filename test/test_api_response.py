@@ -28,9 +28,9 @@ import os
 import sys
 import unittest
 
-import selectel_dns
-from selectel_dns.rest import ApiException
-from selectel_dns.models.api_response import ApiResponse
+import selectel_dns_api
+from selectel_dns_api.rest import ApiException
+from selectel_dns_api.models.api_response import ApiResponse
 
 
 class TestApiResponse(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestApiResponse(unittest.TestCase):
         """
         Test ApiResponse
         """
-        model = selectel_dns.models.api_response.ApiResponse()
+        model = selectel_dns_api.models.api_response.ApiResponse()
 
 
 if __name__ == '__main__':
