@@ -502,8 +502,11 @@
         "responses" : {
           "200" : {
             "description" : "successful operation",
-            "schema" : {
-              "$ref" : "#/definitions/Record"
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Record"
+              }
             }
           },
           "404" : {

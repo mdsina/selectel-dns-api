@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_resource_records_by_domain_name**
-> Record get_resource_records_by_domain_name(domain_name)
+> list[Record] get_resource_records_by_domain_name(domain_name)
 
 Find resource records info for domain by name
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Record**](Record.md)
+[**list[Record]**](Record.md)
 
 ### Authorization
 
