@@ -407,7 +407,7 @@
         }
       }
     },
-    "/{domain_id}/records" : {
+    "/{domain_id}/records/" : {
       "post" : {
         "tags" : [ "records" ],
         "summary" : "Create resource records for domain",
@@ -485,7 +485,7 @@
         }
       }
     },
-    "/{domain_name}/records" : {
+    "/{domain_name}/records/" : {
       "get" : {
         "tags" : [ "records" ],
         "summary" : "Find resource records info for domain by name",
