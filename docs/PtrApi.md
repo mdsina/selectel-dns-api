@@ -20,11 +20,16 @@ Create new PTR record
 
 ### Example 
 ```python
-from __future__ import print_statement
+from __future__ import print_function
 import time
 import selectel_dns_api
 from selectel_dns_api.rest import ApiException
 from pprint import pprint
+
+# Configure API key authorization: X-Token
+selectel_dns_api.configuration.api_key['X-Token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# selectel_dns_api.configuration.api_key_prefix['X-Token'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = selectel_dns_api.PtrApi()
@@ -50,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[X-Token](../README.md#X-Token)
 
 ### HTTP request headers
 
@@ -68,11 +73,16 @@ Deletes a PTR record
 
 ### Example 
 ```python
-from __future__ import print_statement
+from __future__ import print_function
 import time
 import selectel_dns_api
 from selectel_dns_api.rest import ApiException
 from pprint import pprint
+
+# Configure API key authorization: X-Token
+selectel_dns_api.configuration.api_key['X-Token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# selectel_dns_api.configuration.api_key_prefix['X-Token'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = selectel_dns_api.PtrApi()
@@ -97,7 +107,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[X-Token](../README.md#X-Token)
 
 ### HTTP request headers
 
@@ -115,11 +125,16 @@ Returns a single PTR record
 
 ### Example 
 ```python
-from __future__ import print_statement
+from __future__ import print_function
 import time
 import selectel_dns_api
 from selectel_dns_api.rest import ApiException
 from pprint import pprint
+
+# Configure API key authorization: X-Token
+selectel_dns_api.configuration.api_key['X-Token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# selectel_dns_api.configuration.api_key_prefix['X-Token'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = selectel_dns_api.PtrApi()
@@ -145,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[X-Token](../README.md#X-Token)
 
 ### HTTP request headers
 
@@ -163,11 +178,16 @@ Getting PTR records
 
 ### Example 
 ```python
-from __future__ import print_statement
+from __future__ import print_function
 import time
 import selectel_dns_api
 from selectel_dns_api.rest import ApiException
 from pprint import pprint
+
+# Configure API key authorization: X-Token
+selectel_dns_api.configuration.api_key['X-Token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# selectel_dns_api.configuration.api_key_prefix['X-Token'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = selectel_dns_api.PtrApi()
@@ -189,7 +209,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[X-Token](../README.md#X-Token)
 
 ### HTTP request headers
 
@@ -207,11 +227,16 @@ Updates a PTR record
 
 ### Example 
 ```python
-from __future__ import print_statement
+from __future__ import print_function
 import time
 import selectel_dns_api
 from selectel_dns_api.rest import ApiException
 from pprint import pprint
+
+# Configure API key authorization: X-Token
+selectel_dns_api.configuration.api_key['X-Token'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# selectel_dns_api.configuration.api_key_prefix['X-Token'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = selectel_dns_api.PtrApi()
@@ -239,7 +264,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[X-Token](../README.md#X-Token)
 
 ### HTTP request headers
 

@@ -2,7 +2,7 @@
   "swagger" : "2.0",
   "info" : {
     "description" : "Simple Selectel DNS API.",
-    "version" : "1.0.0",
+    "version" : "1.0.1",
     "title" : "Selectel DNS API",
     "contact" : {
       "email" : "info@mdsina.ru"
