@@ -239,7 +239,7 @@
         }
       }
     },
-    "/ptr" : {
+    "/ptr/" : {
       "post" : {
         "tags" : [ "ptr" ],
         "summary" : "Create new PTR record",
@@ -644,7 +644,7 @@
         }
       }
     },
-    "/tags" : {
+    "/tags/" : {
       "post" : {
         "tags" : [ "tags" ],
         "summary" : "Create new tag",
