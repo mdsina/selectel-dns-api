@@ -2,7 +2,7 @@
   "swagger" : "2.0",
   "info" : {
     "description" : "Simple Selectel DNS API.",
-    "version" : "1.0.0",
+    "version" : "1.0.1",
     "title" : "Selectel DNS API",
     "contact" : {
       "email" : "info@mdsina.ru"
@@ -239,7 +239,7 @@
         }
       }
     },
-    "/ptr" : {
+    "/ptr/" : {
       "post" : {
         "tags" : [ "ptr" ],
         "summary" : "Create new PTR record",
@@ -407,7 +407,7 @@
         }
       }
     },
-    "/{domain_id}/records" : {
+    "/{domain_id}/records/" : {
       "post" : {
         "tags" : [ "records" ],
         "summary" : "Create resource records for domain",
@@ -485,7 +485,7 @@
         }
       }
     },
-    "/{domain_name}/records" : {
+    "/{domain_name}/records/" : {
       "get" : {
         "tags" : [ "records" ],
         "summary" : "Find resource records info for domain by name",
@@ -644,7 +644,7 @@
         }
       }
     },
-    "/tags" : {
+    "/tags/" : {
       "post" : {
         "tags" : [ "tags" ],
         "summary" : "Create new tag",
